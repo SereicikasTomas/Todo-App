@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Todo app</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <h1 class="header__title">Todo app</h1>
+      <h2 class="header__subtitle">What you need to do</h2>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="actions__container">
+      <input type="text" placeholder="Filter todos" id="filter-todos" class="input">
+      <label class="checkbox">
+        <input type="checkbox" id="hide"> Hide Completed Todos.
+      </label>
+    </div>
+  </div>
+  <div class="container">
+    <div id="list"></div>
+    <form>
+      <input type="text" class="input" placeholder="New todo" name="newTodo" minlength="5" required>
+      <button class="button">Add Todo</button>
+    </form>
+  </div>
+  
+  <script src="scripts/uuidv4.js"></script>
+  <script src="scripts/todo-functions.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>

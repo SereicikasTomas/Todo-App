@@ -1,0 +1,1 @@
+As the name implies it's an app for your todos.
